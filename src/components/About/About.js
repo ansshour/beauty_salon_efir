@@ -16,7 +16,7 @@ const About = () => {
                 <h1 className={styles.title}>О нас</h1>
                 <div className={styles.textInfo__wrapper}>
                     <p className={styles.info}>Салон красоты «Эфир» возможно лучший салон красоты в Санкт-Петербурге.
-                        Если вы зашли на эту страницу, значит вы на пути к максимально качественному обслуживанию в салоне красоты. Вам остается только прийти к нам, чтобы с нашей помощью стать моложе и красивее, зарядиться хорошим настроением.
+                    Если вы зашли на эту страницу, значит вы на пути к максимально качественному обслуживанию в салоне красоты. Вам остается только прийти к нам, чтобы с нашей помощью стать моложе и красивее, зарядиться хорошим настроением.
                     </p>
                     <p className={styles.info}>
                         Мы предлагаем широчайший спектр услуг.
@@ -29,6 +29,19 @@ const About = () => {
                     <p className={[styles.info, styles.lastInfo].join(" ")}>
                         Основной наш принцип: приходить на работу с хорошим настроением, работать с удовольствием и вдохновенно. Это очень важно, ведь так мы максимально выкладываемся, делая вас красивее, здоровее и радостнее. Мы счастливы работать в полную силу, для Вас!
                     </p>
+                </div>
+                <div className={styles.partners__wrapper}>
+                    <p className={styles.partners__title}>Наши партнеры</p>
+                    <div className={styles.partners__list}>
+                        <div className={styles.partner__item}><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/L%27Or%C3%A9al_logo.svg/800px-L%27Or%C3%A9al_logo.svg.png?20130628084147" height="60px   " alt=""></img></div>
+                        <div className={styles.partner__item}><img src="https://cdn.cosmostore.org/uploaded_files/brands/648.jpg" height="60px   " alt=""></img></div>
+                        <div className={styles.partner__item}><img src="https://static.tildacdn.com/tild3337-6565-4734-a330-646438613331/logo.svg" height="60px   " alt=""></img></div>
+                        <div className={styles.partner__item}><img src="https://logos-world.net/wp-content/uploads/2020/11/Nioxin-Emblem.jpg" height="60px   " alt=""></img></div>
+                        <div className={styles.partner__item}><img src="http://4.bp.blogspot.com/-_J77eQa-vjM/UWvBeiRfPrI/AAAAAAAAAnI/of8YLps2Rro/w1200-h630-p-k-no-nu/maria-galland.jpg" height="60px   " alt=""></img></div>
+                        <div className={styles.partner__item}><img src="https://www.mariagalland.com/on/demandware.static/Sites-MG-Site/-/default/dwcfb710c0/images/logo@2x.png" height="60px" alt=""></img></div>
+                        <div className={styles.partner__item}><img src="https://static3.tildacdn.com/tild6437-6530-4232-a562-636333343161/logo.svg" height="60px" alt=""></img></div>
+                        <div className={styles.partner__item}><img src="https://tb-prof.ru/wp-content/uploads/2020/10/cropped-tb_logo.png" height="60px" alt=""></img></div>
+                    </div>
                 </div>
                 <div className={styles.licenses__wrapper}>
                     <p className={styles.licenses__title}>Наши лицензии</p>

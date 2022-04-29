@@ -28,18 +28,24 @@ function Header() {
 
     }, [])
 
+    const scrollTop = () => {
+        if (window.scrollY > 0) {
+            window.scrollTo(0, 0);
+        }
+    }
+
     return (
         <>
             <Navbar className={style.navbar} style={isScrolled ? { height: "50px" } : {}} variant="dark" fixed="top" expand="md" collapseOnSelect>
                 <Container className={style.container}>
-                    <Link to="/" className={style.logo}><Navbar.Brand className={style.logo} href="/">Эфир</Navbar.Brand></Link>
+                    <Link to="/" className={style.logo}><Navbar.Brand className={style.logo} href="/" onClick = {scrollTop}>Эфир</Navbar.Brand></Link>
                     <NavbarToggle area-controls="responsive-navbar-nav" />
                     <NavbarCollapse id="responsive-navbar-nav">
                         <Nav className={style.navbar__items + " me_auto"}>
-                            <Link to="/about"><Nav.Link className={style.navbar__item} href="/about">О компании</Nav.Link></Link>
-                            <Link to="/team"><Nav.Link className={style.navbar__item} href="/team">Команда</Nav.Link></Link>
-                            <Link to="/price"><Nav.Link className={style.navbar__item} href="/price">Цены</Nav.Link></Link>
-                            <Link to="/contacts"><Nav.Link className={style.navbar__item} href="/contacts">Контакты</Nav.Link></Link>
+                            <Link to="/about"><Nav.Link className={style.navbar__item} href="/about" onClick = {scrollTop}>О компании</Nav.Link></Link>
+                            <Link to="/team"><Nav.Link className={style.navbar__item} href="/team" onClick = {scrollTop}>Команда</Nav.Link></Link>
+                            <Link to="/price"><Nav.Link className={style.navbar__item} href="/price" onClick = {scrollTop}>Цены</Nav.Link></Link>
+                            <Link to="/contacts"><Nav.Link className={style.navbar__item} href="/contacts" onClick = {scrollTop}>Контакты</Nav.Link></Link>
                         </Nav>
                     </NavbarCollapse>
                 </Container>

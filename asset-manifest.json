@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/beauty_salon_efir/static/css/main.83f18acb.css",
+    "main.js": "/beauty_salon_efir/static/js/main.8533f685.js",
+    "static/media/licenses1.png": "/beauty_salon_efir/static/media/licenses1.18865abf1cedb1dddb1f.png",
+    "static/media/1.pdf": "/beauty_salon_efir/static/media/1.70a4d89a53195b49ffeb.pdf",
+    "static/media/licenses3.png": "/beauty_salon_efir/static/media/licenses3.e3538b801e75da6f0e4f.png",
+    "static/media/licenses2.png": "/beauty_salon_efir/static/media/licenses2.157ab004c7773f6ed16c.png",
+    "static/media/3.pdf": "/beauty_salon_efir/static/media/3.e4a5d35f3b1a1bf92642.pdf",
+    "static/media/2.pdf": "/beauty_salon_efir/static/media/2.1a487df875e1561ce6b4.pdf",
+    "static/media/background.jpg": "/beauty_salon_efir/static/media/background.47b16791f52391857fb4.jpg",
+    "static/media/5.webp": "/beauty_salon_efir/static/media/5.2c91b8577f5c00af80ad.webp",
+    "static/media/1.webp": "/beauty_salon_efir/static/media/1.4a9c70c5f6fb0d458b5c.webp",
+    "static/media/4.webp": "/beauty_salon_efir/static/media/4.8c555aedb28b7ea63fdd.webp",
+    "static/media/2_1.webp": "/beauty_salon_efir/static/media/2_1.fb9ae0a03c4340be6b98.webp",
+    "static/media/3_1.webp": "/beauty_salon_efir/static/media/3_1.24d64172361fb96a6e68.webp",
+    "index.html": "/beauty_salon_efir/index.html",
+    "static/media/bg.svg": "/beauty_salon_efir/static/media/bg.d880e51ad682dddaa41d.svg",
+    "main.83f18acb.css.map": "/beauty_salon_efir/static/css/main.83f18acb.css.map",
+    "main.8533f685.js.map": "/beauty_salon_efir/static/js/main.8533f685.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.83f18acb.css",
+    "static/js/main.8533f685.js"
+  ]
+}

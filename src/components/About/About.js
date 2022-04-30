@@ -16,7 +16,7 @@ const About = () => {
                 <h1 className={styles.title}>О нас</h1>
                 <div className={styles.textInfo__wrapper}>
                     <p className={styles.info}>Салон красоты «Эфир» возможно лучший салон красоты в Санкт-Петербурге.
-                    Если вы зашли на эту страницу, значит вы на пути к максимально качественному обслуживанию в салоне красоты. Вам остается только прийти к нам, чтобы с нашей помощью стать моложе и красивее, зарядиться хорошим настроением.
+                        Если вы зашли на эту страницу, значит вы на пути к максимально качественному обслуживанию в салоне красоты. Вам остается только прийти к нам, чтобы с нашей помощью стать моложе и красивее, зарядиться хорошим настроением.
                     </p>
                     <p className={styles.info}>
                         Мы предлагаем широчайший спектр услуг.
@@ -37,7 +37,7 @@ const About = () => {
                         <div className={styles.partner__item}><img src="https://cdn.cosmostore.org/uploaded_files/brands/648.jpg" height="60px   " alt=""></img></div>
                         <div className={styles.partner__item}><img src="https://static.tildacdn.com/tild3337-6565-4734-a330-646438613331/logo.svg" height="60px   " alt=""></img></div>
                         <div className={styles.partner__item}><img src="https://logos-world.net/wp-content/uploads/2020/11/Nioxin-Emblem.jpg" height="60px   " alt=""></img></div>
-                        <div className={styles.partner__item}><img src="http://4.bp.blogspot.com/-_J77eQa-vjM/UWvBeiRfPrI/AAAAAAAAAnI/of8YLps2Rro/w1200-h630-p-k-no-nu/maria-galland.jpg" height="60px   " alt=""></img></div>
+                        <div className={styles.partner__item}><img src="https://www.myorganics.ru/wp-content/themes/photography/images/mylogo.png" height="60px   " alt=""></img></div>
                         <div className={styles.partner__item}><img src="https://www.mariagalland.com/on/demandware.static/Sites-MG-Site/-/default/dwcfb710c0/images/logo@2x.png" height="60px" alt=""></img></div>
                         <div className={styles.partner__item}><img src="https://static3.tildacdn.com/tild6437-6530-4232-a562-636333343161/logo.svg" height="60px" alt=""></img></div>
                         <div className={styles.partner__item}><img src="https://tb-prof.ru/wp-content/uploads/2020/10/cropped-tb_logo.png" height="60px" alt=""></img></div>

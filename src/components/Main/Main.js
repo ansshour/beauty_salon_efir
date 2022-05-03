@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import style from "./Main.module.css";
 import Carousel from "react-bootstrap/Carousel";
 import img1 from "../../images/slider/1.webp";
@@ -10,6 +10,11 @@ import "./main.css";
 import About from "../About/About"
 
 function Main() {
+
+    useEffect(() => {
+        document.title = "Салон красоты премиум класса «Эфир»"
+    }, [])
+
     return (
         <div className={style.main__wrapper}>
             <div className={style.wrapper}>

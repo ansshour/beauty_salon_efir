@@ -9,6 +9,7 @@ import About from "../About/About";
 import Contacts from "../Contacts/Contacts";
 import Price from "../Price/Price";
 import Team from "../Team/Team";
+import { Sales } from "../Sales/Sales"
 
 
 function Header() {
@@ -36,6 +37,7 @@ function Header() {
 
     return (
         <>
+
             <Navbar className={style.navbar} style={isScrolled ? { height: "50px" } : {}} variant="dark" fixed="top" expand="md" collapseOnSelect>
                 <Container className={style.container}>
                     <Link to="/" className={style.logo}><Navbar.Brand className={style.logo} href="/" onClick = {scrollTop}>Эфир</Navbar.Brand></Link>
@@ -46,6 +48,7 @@ function Header() {
                             <Link to="/team"><Nav.Link className={style.navbar__item} href="/team" onClick = {scrollTop}>Команда</Nav.Link></Link>
                             <Link to="/price"><Nav.Link className={style.navbar__item} href="/price" onClick = {scrollTop}>Цены</Nav.Link></Link>
                             <Link to="/contacts"><Nav.Link className={style.navbar__item} href="/contacts" onClick = {scrollTop}>Контакты</Nav.Link></Link>
+                            <Link to="/sales"><Nav.Link className={style.navbar__item} href="/sales" onClick = {scrollTop}>Акции</Nav.Link></Link>
                         </Nav>
                     </NavbarCollapse>
                 </Container>
@@ -57,6 +60,7 @@ function Header() {
                 <Route path="/price" element={<Price />} />
                 <Route path="/team" element={<Team />} />
                 <Route path="*" element={<Main />} />
+                <Route path="/sales" element={<Sales />} />
             </Routes>
         </>
     )

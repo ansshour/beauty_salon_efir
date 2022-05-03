@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import styles from "./Team.module.css";
 import { TeamCard } from "./TeamCard/TeamCard";
@@ -73,6 +73,10 @@ const teamData = [
 ]
 
 const Team = () => {
+
+    useEffect(() => {
+        document.title = "Наша команда"
+    }, [])
 
     const [modalActive, setModalActive] = useState([false, 0]);
 

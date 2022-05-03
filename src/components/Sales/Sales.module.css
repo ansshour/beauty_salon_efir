@@ -1,0 +1,28 @@
+p {
+    margin: 0;
+}
+
+.container {
+    padding-top: 120px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sales__cards {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+
+.sales__card {
+    box-shadow: 0px 0px 10px 3px rgba(34, 60, 80, 0.1);
+    background-color: white;
+    padding: 5px;
+    max-width: 300px;
+    border-radius: 5px;
+    margin: 10px 10px;
+}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import styles from "./Contacts.module.css";
 import { Container } from 'react-bootstrap';
 import { faClock, faLocationDot, faArrowUpRightFromSquare, faPhone, faEnvelope, faUserPen, faAddressBook } from "@fortawesome/free-solid-svg-icons";
@@ -6,6 +6,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagramSquare, faVk } from "@fortawesome/free-brands-svg-icons";
 
 const Contacts = () => {
+    useEffect(() => {
+        document.title = "Контакты"
+    }, [])
     return (
         <Container>
             <div className={styles.container__wrapper}>
@@ -30,6 +33,7 @@ const Contacts = () => {
                                 <a href="https://vk.com/efir_salon" target="_blank" className={styles.socialNetwork}><FontAwesomeIcon className={styles.vk} icon={faVk} /></a>
                                 <a href="https://www.instagram.com/salon_efir/" target="_blank" className={styles.socialNetwork}><FontAwesomeIcon className={styles.instagram} icon={faInstagramSquare} /></a>
                             </div>
+                            <div style = {{marginTop:"10px", textDecoration:"underline"}}>У нас есть платная парковка (100 руб/ч)</div>
                         </div>
                     </div>
                 </div>

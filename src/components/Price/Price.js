@@ -5,13 +5,15 @@ import "bootstrap";
 import Tab from "./Tab/Tab";
 import { Container } from 'react-bootstrap';
 import { getData } from "./data";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { HairService } from "./Tab/Tab";
 
 const data = getData();
 
 const Price = (props) => {
-
+    useEffect(() =>{
+        document.title = "Цены на услуги"
+    },[])
 
     const [content, setContent] = useState(HairService);
     const [activeTab, setActiveTab] = useState(0);

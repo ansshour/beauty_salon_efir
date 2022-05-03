@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Container } from "react-bootstrap";
 import styles from "./About.module.css";
 import licenses1 from "../../images/licenses/licenses1.png";
@@ -10,13 +10,17 @@ import licenses3pdf from "../../images/licenses/3.pdf";
 
 const About = () => {
 
+    useEffect(() => {
+        document.title = "О компании"
+    }, [])
+
     return (
         <Container>
             <div className={styles.about__wrapper}>
                 <h1 className={styles.title}>О нас</h1>
                 <div className={styles.textInfo__wrapper}>
                     <p className={styles.info}>Салон красоты «Эфир» возможно лучший салон красоты в Санкт-Петербурге.
-                        Если вы зашли на эту страницу, значит вы на пути к максимально качественному обслуживанию в салоне красоты. Вам остается только прийти к нам, чтобы с нашей помощью стать моложе и красивее, зарядиться хорошим настроением.
+                    Если вы зашли на эту страницу, значит вы на пути к максимально качественному обслуживанию в салоне красоты. Вам остается только прийти к нам, чтобы с нашей помощью стать моложе и красивее, зарядиться хорошим настроением.
                     </p>
                     <p className={styles.info}>
                         Мы предлагаем широчайший спектр услуг.

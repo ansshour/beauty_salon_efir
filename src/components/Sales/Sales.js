@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Card, Button, Row, Col } from "react-bootstrap";
 import styles from "./Sales.module.css"
 import { SalesModal } from "./SalesModal/SalesModal";
@@ -66,6 +66,10 @@ const SalesCard = ({ image, title, info, setModalActive, setModalData }) => {
 }
 
 export const Sales = () => {
+
+    useEffect(() => {
+        document.title = "Акции"
+    }, [])
 
     const [isModalActive, setIsModalActive] = useState(false);
     const [modalData, setModalData] = useState({});

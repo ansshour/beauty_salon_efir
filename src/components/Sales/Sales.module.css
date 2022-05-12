@@ -1,13 +1,46 @@
 .container_ {
     padding-top: 120px;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 40px;
     padding-bottom: 30px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .button:focus,
 .button:active {
     box-shadow: none;
+}
+
+.card {
+    margin: 40px;  
+}
+
+.cardBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.button {
+    justify-self: flex-end;
+}
+
+@media (max-width: 992px) {
+    .card_ {
+        width: 19rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .card_ {
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 1400px) {
+    .card_ {
+        width: 19rem !important;
+    }
 }

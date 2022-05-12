@@ -8,6 +8,7 @@ import img4 from "../../images/slider/4.webp";
 import img5 from "../../images/slider/5.webp";
 import "./main.css";
 import About from "../About/About"
+import App1 from "../App1/App1"
 
 function Main() {
 
@@ -60,6 +61,7 @@ function Main() {
                 </div>
             </div>
             <div className={style.about}><About /></div>
+            <App1 />
         </div>
     )
 }

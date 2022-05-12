@@ -2,29 +2,23 @@ import React, { useState } from "react";
 import styles from "./SalesModal.module.css";
 import { Form, Button } from "react-bootstrap";
 
-export const SalesModal = ({ name, isSalesModalOpen }) => {
+export const SalesModal = ({ modalActive, setModalActive, modalData }) => {
 
 
     return (
-        <div className={styles.container} style={isSalesModalOpen ? { opacity: "1" } : { opacity: "0" }}>
-            <div className={styles.wrapper}>
+        <div className={modalActive ? `${styles.container} ${styles.active}` : `${styles.container}`} onClick={() => { setModalActive(false) }}>
+            <div className={modalActive ? `${styles.modal} ${styles.modalActive}` : `${styles.modal}`} onClick={e => e.stopPropagation()}>
+                <p style={{ fontWeight: "bold", marginBottom: "10px" }}>Название услуги: {modalData.title}</p>
                 <Form>
-                    <Form.Group className="mb-3">
-                        <Form.Label>Название услуги: {name}</Form.Label>
+                    <Form.Group className="mb-2">
+                        <Form.Label style={{ marginBottom: "1px" }}>Ваше ФИО</Form.Label>
+                        <Form.Control className={styles.input} type="name" placeholder="Иванов Иван Иванович" />
                     </Form.Group>
-                    <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                        <Form.Label>Ваше имя</Form.Label>
-                        <Form.Control type="name" placeholder="Ваше имя" />
+                    <Form.Group className="mb-4">
+                        <Form.Label style={{ marginBottom: "1px" }}>Ваш номер телефона</Form.Label>
+                        <Form.Control className={styles.input} type="phone" placeholder="+7 (999) 999 999" />
                     </Form.Group>
-                    <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                        <Form.Label>Ваша почта</Form.Label>
-                        <Form.Control type="email" placeholder="name@example.com" />
-                    </Form.Group>
-                    <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                        <Form.Label>Ваш номер телефона</Form.Label>
-                        <Form.Control type="Номер телефона" placeholder="+7 (999) 999 9999" />
-                    </Form.Group>
-                    <Button variant="dark" className="mt-3" type="submit">
+                    <Button variant="dark" type="submit">
                         Участвовать в акции
                     </Button>
                 </Form>

@@ -4,6 +4,7 @@ import styles from "./Sales.module.css"
 import { SalesModal } from "./SalesModal/SalesModal";
 
 
+
 const salesData = [
     {
         image: "https://proprikol.ru/wp-content/uploads/2020/08/krasivye-kartinki-kotikov-48.jpg",
@@ -26,23 +27,23 @@ const salesData = [
 ]
 
 
-const SalesCard = ({ image, title, info }) => {
+const SalesCard = ({ image, title, info, setModalActive, setModalData }) => {
 
-    const [isSalesModalOpen, setIsSalesModalOpen] = useState(false);
-
-    const salesClickHandler = () => {
-        setIsSalesModalOpen(true)
+    const modalClick = () => {
+        setModalData({ title })
+        setModalActive(true)
     }
 
+
     return (
-        <Card style={{ width: '18rem' }}><SalesModal isSalesModalOpen={isSalesModalOpen} />
+        <Card style={{ width: '18rem' }}>
             <Card.Img variant="top" src={image} />
             <Card.Body>
                 <Card.Title>{title}</Card.Title>
                 <Card.Text>
                     {info}
                 </Card.Text>
-                <Button variant="dark" onClick={salesClickHandler}>Участвовать в акции</Button>
+                <Button className={styles.button} variant="dark" onClick={modalClick}>Участвовать в акции</Button>
             </Card.Body>
         </Card>
     )
@@ -50,14 +51,17 @@ const SalesCard = ({ image, title, info }) => {
 
 export const Sales = () => {
 
+    const [isModalActive, setIsModalActive] = useState(false);
+    const [modalData, setModalData] = useState({});
+
     return (
         <div>
             <Container>
                 <div className={styles.container_}>
-                    {salesData.map((data, i) => <SalesCard image={data.image} title={data.title} info={data.text} key={i} />)}
+                    {salesData.map((data, i) => <SalesCard image={data.image} title={data.title} info={data.text} key={i} setModalActive={setIsModalActive} setModalData={setModalData} />)}
                 </div>
-                <SalesModal isSalesModalOpen={isSalesModalOpen} name = {title}/>
             </Container>
+            <SalesModal modalActive={isModalActive} setModalActive={setIsModalActive} modalData={modalData} />
         </div>
     )
 }

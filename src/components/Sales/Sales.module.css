@@ -1,5 +1,3 @@
-
-
 .container_ {
     padding-top: 120px;
     display: flex;
@@ -7,5 +5,9 @@
     flex-wrap: wrap;
     gap: 20px;
     padding-bottom: 30px;
-    min-height: 100vh;
+}
+
+.button:focus,
+.button:active {
+    box-shadow: none;
 }

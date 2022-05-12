@@ -7,32 +7,32 @@ import { SalesModal } from "./SalesModal/SalesModal";
 
 const salesData = [
     {
-        image: "https://stolica-s.su/wp-content/uploads/2022/02/koty-zhivotnye-665.jpg",
+        image: "https://i.ibb.co/n6Dgfxd/1.png",
         title: "Знакомство со студией",
         text: `Скидка 20% на все услуги при первом посещении студии «Эфир».`
     },
     {
-        image: "https://stolica-s.su/wp-content/uploads/2022/02/koty-zhivotnye-665.jpg",
+        image: "https://i.ibb.co/bJ8kxvR/2.png",
         title: "Знакомство с косметологом",
         text: `Сертификат на косметологию 1000 рублей на любую услугу.`
     },
     {
-        image: "https://stolica-s.su/wp-content/uploads/2022/02/koty-zhivotnye-665.jpg",
+        image: "https://i.ibb.co/bbt53hJ/3.png",
         title: "Миндальный уход + массаж лица",
         text: `При посещении услуги "миндальный уход" 25 минут массажа лица в подарок.`
     },
     {
-        image: "https://stolica-s.su/wp-content/uploads/2022/02/koty-zhivotnye-665.jpg",
+        image: "https://i.ibb.co/smMdbnK/4.png",
         title: "С подругой выгоднее",
         text: `Пройдите процедуру Curacen (процедура для омоложения области глаз) вместе с подругой за 8000 руб вместо 16000 руб.`
     },
     {
-        image: "https://stolica-s.su/wp-content/uploads/2022/02/koty-zhivotnye-665.jpg",
+        image: "https://i.ibb.co/c1PjvD2/5.png",
         title: "Первое посещение массажа",
-        text: `На первое посещение массажа действует скидка 50%. Стоимость процедуры: 2000 руб.`
+        text: `На первое посещение массажа действует скидка 50%. Стоимость процедуры: 2000 руб. Длительность: 30 минут.`
     },
     {
-        image: "https://stolica-s.su/wp-content/uploads/2022/02/koty-zhivotnye-665.jpg",
+        image: "https://i.ibb.co/hHtjg2c/6.png",
         title: "Стрижка + укладка",
         text: `При посещении процедуры "Стрижка" за 3000 руб., дарим укладку в подарок!`
     }
@@ -48,7 +48,7 @@ const SalesCard = ({ image, title, info, setModalActive, setModalData }) => {
 
 
     return (
-        <Col xl = "3" lg = "4" md = "6" sm = "12">
+        <Col xl="3" lg="4" md="6" sm="12">
             <Card style={{ width: '17rem', marginBottom: "30px" }} className={styles.card_} >
                 <Card.Img variant="top" src={image} />
                 <Card.Body className={styles.cardBody}>

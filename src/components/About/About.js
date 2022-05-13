@@ -37,14 +37,14 @@ const About = () => {
                 <div className={styles.partners__wrapper}>
                     <p className={styles.partners__title}>Наши партнеры</p>
                     <div className={styles.partners__list}>
-                        <div className={styles.partner__item}><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/L%27Or%C3%A9al_logo.svg/800px-L%27Or%C3%A9al_logo.svg.png?20130628084147" height="60px   " alt=""></img></div>
-                        <div className={styles.partner__item}><img src="https://cdn.cosmostore.org/uploaded_files/brands/648.jpg" height="60px   " alt=""></img></div>
-                        <div className={styles.partner__item}><img src="https://static.tildacdn.com/tild3337-6565-4734-a330-646438613331/logo.svg" height="60px   " alt=""></img></div>
-                        <div className={styles.partner__item}><img src="https://logos-world.net/wp-content/uploads/2020/11/Nioxin-Emblem.jpg" height="60px   " alt=""></img></div>
-                        <div className={styles.partner__item}><img src="https://www.myorganics.ru/wp-content/themes/photography/images/mylogo.png" height="60px   " alt=""></img></div>
-                        <div className={styles.partner__item}><img src="https://www.mariagalland.com/on/demandware.static/Sites-MG-Site/-/default/dwcfb710c0/images/logo@2x.png" height="60px" alt=""></img></div>
-                        <div className={styles.partner__item}><img src="https://static3.tildacdn.com/tild6437-6530-4232-a562-636333343161/logo.svg" height="60px" alt=""></img></div>
-                        <div className={styles.partner__item}><img src="https://tb-prof.ru/wp-content/uploads/2020/10/cropped-tb_logo.png" height="60px" alt=""></img></div>
+                        <div className={styles.partner__item}><img src="./images/partners/1.png" height="60px   " alt=""></img></div>
+                        <div className={styles.partner__item}><img src="./images/partners/2.jpg" height="60px   " alt=""></img></div>
+                        <div className={styles.partner__item}><img src="./images/partners/3.svg" height="60px   " alt=""></img></div>
+                        <div className={styles.partner__item}><img src="./images/partners/4.png" height="60px   " alt=""></img></div>
+                        <div className={styles.partner__item}><img src="./images/partners/5.png" height="60px   " alt=""></img></div>
+                        <div className={styles.partner__item}><img src="./images/partners/6.png" height="60px" alt=""></img></div>
+                        <div className={styles.partner__item}><img src="./images/partners/7.svg" height="60px" alt=""></img></div>
+                        <div className={styles.partner__item}><img src="./images/partners/8.png" height="60px" alt=""></img></div>
                     </div>
                 </div>
                 <div className={styles.licenses__wrapper}>

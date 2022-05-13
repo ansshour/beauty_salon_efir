@@ -478,13 +478,67 @@ const MakeService = () => {
     )
 }
 
+const Cosmetology = () => {
+    return (
+        <div className={styles.content__container}>
+            <div className={styles.sectionName}>Косметология</div>
+            <div className={styles.withscroll}>
+                <table className={styles.tableBody}>
+                    Тут пока пусто :)
+                </table>
+            </div>
+        </div>
+    )
+}
+
+const FigureCorrection = () => {
+    return (
+        <div className={styles.content__container}>
+            <div className={styles.sectionName}>Программы коррекции фигуры</div>
+            <div className={styles.withscroll}>
+                <table className={styles.tableBody}>
+                    Тут пока пусто :)
+                </table>
+            </div>
+        </div>
+    )
+}
+
+const HardwareProcedures = () => {
+    return (
+        <div className={styles.content__container}>
+            <div className={styles.sectionName}>Аппаратные процедуры</div>
+            <div className={styles.withscroll}>
+                <table className={styles.tableBody}>
+                    Тут пока пусто :)
+                </table>
+            </div>
+        </div>
+    )
+}
+
+const InjectionProcesures = () => {
+    return (
+        <div className={styles.content__container}>
+            <div className={styles.sectionName}>Инъекционные процедуры</div>
+            <div className={styles.withscroll}>
+                <table className={styles.tableBody}>
+                    Тут пока пусто :)
+                </table>
+            </div>
+        </div>
+    )
+}
 
 const price = [
     HairService,
     NailService,
     Massage,
     MakeService,
-
+    Cosmetology,
+    FigureCorrection,
+    HardwareProcedures,
+    InjectionProcesures
 ]
 
 const Tab = (props) => {

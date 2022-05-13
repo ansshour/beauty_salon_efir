@@ -5,6 +5,10 @@ import emailjs from "emailjs-com";
 
 export const SalesModal = ({ modalActive, setModalActive, modalData }) => {
 
+    const [fio, setFio] = useState("");
+    const [phone, setPhone] = useState("");
+
+
     const sendEmail = (e) => {
         e.preventDefault();
 
@@ -12,6 +16,14 @@ export const SalesModal = ({ modalActive, setModalActive, modalData }) => {
             console.log(res)
         }).catch(err => console.log(err))
         setModalActive(false)
+    }
+
+    const fioInputHandler = (e) => {
+        setFio(e.target.value)
+    }
+
+    const phoneInputHandler = (e) => {
+        setPhone(e.target.value)
     }
 
 
@@ -25,11 +37,11 @@ export const SalesModal = ({ modalActive, setModalActive, modalData }) => {
                     </div>
                     <div className={styles.form__item}>
                         <label>ФИО</label>
-                        <input type="text" name="name" placeholder="Иванов Иван Иванович" className={styles.input}/>
+                        <input type="text" name="name" placeholder="Иванов Иван Иванович" value = {fio} className={styles.input} onChange={fioInputHandler}/>
                     </div>
                     <div className={styles.form__item}>
                         <label>Номер телефона</label>
-                        <input type="phone" name="phone" placeholder="+7 (999) 999 999" className={styles.input}/>
+                        <input type="phone" name="phone" placeholder="+7 (999) 999 999" value = {phone} className={styles.input} onChange = {phoneInputHandler}/>
                     </div>
                     <input type="submit" value="Участвовать в акции" className={styles.button}/>
                 </form>

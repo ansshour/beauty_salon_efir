@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/beauty_salon_efir/static/css/main.83f18acb.css",
-    "main.js": "/beauty_salon_efir/static/js/main.8533f685.js",
+    "main.css": "/beauty_salon_efir/static/css/main.d0b08b96.css",
+    "main.js": "/beauty_salon_efir/static/js/main.8c18d80b.js",
     "static/media/licenses1.png": "/beauty_salon_efir/static/media/licenses1.18865abf1cedb1dddb1f.png",
     "static/media/1.pdf": "/beauty_salon_efir/static/media/1.70a4d89a53195b49ffeb.pdf",
     "static/media/licenses3.png": "/beauty_salon_efir/static/media/licenses3.e3538b801e75da6f0e4f.png",
@@ -16,11 +16,11 @@
     "static/media/3_1.webp": "/beauty_salon_efir/static/media/3_1.24d64172361fb96a6e68.webp",
     "index.html": "/beauty_salon_efir/index.html",
     "static/media/bg.svg": "/beauty_salon_efir/static/media/bg.d880e51ad682dddaa41d.svg",
-    "main.83f18acb.css.map": "/beauty_salon_efir/static/css/main.83f18acb.css.map",
-    "main.8533f685.js.map": "/beauty_salon_efir/static/js/main.8533f685.js.map"
+    "main.d0b08b96.css.map": "/beauty_salon_efir/static/css/main.d0b08b96.css.map",
+    "main.8c18d80b.js.map": "/beauty_salon_efir/static/js/main.8c18d80b.js.map"
   },
   "entrypoints": [
-    "static/css/main.83f18acb.css",
-    "static/js/main.8533f685.js"
+    "static/css/main.d0b08b96.css",
+    "static/js/main.8c18d80b.js"
   ]
 }

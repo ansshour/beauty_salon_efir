@@ -1,11 +1,8 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import { Container } from "react-bootstrap";
 import styles from "./About.module.css";
-import licenses1 from "../../images/licenses/licenses1.png";
 import licensespdf from "../../images/licenses/1.pdf";
-import licenses2 from "../../images/licenses/licenses2.png";
 import licenses2pdf from "../../images/licenses/2.pdf";
-import licenses3 from "../../images/licenses/licenses3.png";
 import licenses3pdf from "../../images/licenses/3.pdf";
 
 const About = () => {
@@ -20,7 +17,7 @@ const About = () => {
                 <h1 className={styles.title}>О нас</h1>
                 <div className={styles.textInfo__wrapper}>
                     <p className={styles.info}>Салон красоты «Эфир» возможно лучший салон красоты в Санкт-Петербурге.
-                    Если вы зашли на эту страницу, значит вы на пути к максимально качественному обслуживанию в салоне красоты. Вам остается только прийти к нам, чтобы с нашей помощью стать моложе и красивее, зарядиться хорошим настроением.
+                        Если вы зашли на эту страницу, значит вы на пути к максимально качественному обслуживанию в салоне красоты. Вам остается только прийти к нам, чтобы с нашей помощью стать моложе и красивее, зарядиться хорошим настроением.
                     </p>
                     <p className={styles.info}>
                         Мы предлагаем широчайший спектр услуг.
@@ -37,22 +34,22 @@ const About = () => {
                 <div className={styles.partners__wrapper}>
                     <p className={styles.partners__title}>Наши партнеры</p>
                     <div className={styles.partners__list}>
-                        <div className={styles.partner__item}><img src="./images/partners/1.png" height="60px   " alt=""></img></div>
-                        <div className={styles.partner__item}><img src="./images/partners/2.jpg" height="60px   " alt=""></img></div>
-                        <div className={styles.partner__item}><img src="./images/partners/3.svg" height="60px   " alt=""></img></div>
-                        <div className={styles.partner__item}><img src="./images/partners/4.png" height="60px   " alt=""></img></div>
-                        <div className={styles.partner__item}><img src="./images/partners/5.png" height="60px   " alt=""></img></div>
-                        <div className={styles.partner__item}><img src="./images/partners/6.png" height="60px" alt=""></img></div>
-                        <div className={styles.partner__item}><img src="./images/partners/7.svg" height="60px" alt=""></img></div>
-                        <div className={styles.partner__item}><img src="./images/partners/8.png" height="60px" alt=""></img></div>
+                        <div className={styles.partner__item}><img src="./images/partners/1.webp" height="60px   " alt=""></img></div>
+                        <div className={styles.partner__item}><img src="./images/partners/2.webp" height="60px   " alt=""></img></div>
+                        <div className={styles.partner__item}><img src="./images/partners/3.webp" height="60px   " alt=""></img></div>
+                        <div className={styles.partner__item}><img src="./images/partners/4.webp" height="60px   " alt=""></img></div>
+                        <div className={styles.partner__item}><img src="./images/partners/5.webp" height="60px   " alt=""></img></div>
+                        <div className={styles.partner__item}><img src="./images/partners/6.webp" height="60px" alt=""></img></div>
+                        <div className={styles.partner__item}><img src="./images/partners/7.webp" height="60px" alt=""></img></div>
+                        <div className={styles.partner__item}><img src="./images/partners/8.webp" height="60px" alt=""></img></div>
                     </div>
                 </div>
                 <div className={styles.licenses__wrapper}>
                     <p className={styles.licenses__title}>Наши лицензии</p>
                     <div className={styles.items}>
-                        <a href={licensespdf} target="_blank"><img className={styles.image} src={licenses1} alt="licenses" width="300px"></img></a>
-                        <a href={licenses2pdf} target="_blank"><img className={styles.image} src={licenses2} alt="licenses" width="300px"></img></a>
-                        <a href={licenses3pdf} target="_blank"><img className={styles.image} src={licenses3} alt="licenses" width="300px"></img></a>
+                        <a href={licensespdf} target="_blank"><img className={styles.image} src="./images/licenses/licenses1.webp" alt="licenses" width="300px"></img></a>
+                        <a href={licenses2pdf} target="_blank"><img className={styles.image} src="./images/licenses/licenses2.webp" alt="licenses" width="300px"></img></a>
+                        <a href={licenses3pdf} target="_blank"><img className={styles.image} src="./images/licenses/licenses3.webp" alt="licenses" width="300px"></img></a>
                     </div>
                 </div>
             </div>

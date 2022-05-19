@@ -7,32 +7,32 @@ import { SalesModal } from "./SalesModal/SalesModal";
 
 const salesData = [
     {
-        image: "./images/sales/1.png",
+        image: "./images/sales/1.webp",
         title: "Знакомство со студией",
         text: `Скидка 20% на все услуги при первом посещении студии «Эфир».`
     },
     {
-        image: "./images/sales/2.png",
+        image: "./images/sales/2.webp",
         title: "Знакомство с косметологом",
         text: `Сертификат на косметологию 1000 рублей на любую услугу.`
     },
     {
-        image: "./images/sales/3.png",
+        image: "./images/sales/3.webp",
         title: "Миндальный уход + массаж лица",
         text: `При посещении услуги "миндальный уход" 25 минут массажа лица в подарок.`
     },
     {
-        image: "./images/sales/4.png",
+        image: "./images/sales/4.webp",
         title: "С подругой выгоднее",
         text: `Пройдите процедуру Curacen (процедура для омоложения области глаз) вместе с подругой за 8000 руб вместо 16000 руб.`
     },
     {
-        image: "./images/sales/5.png",
+        image: "./images/sales/5.webp",
         title: "Первое посещение массажа",
         text: `На первое посещение массажа действует скидка 50%. Стоимость процедуры: 2000 руб. Длительность: 30 минут.`
     },
     {
-        image: "./images/sales/6.png",
+        image: "./images/sales/6.webp",
         title: "Стрижка + укладка",
         text: `При посещении процедуры "Стрижка" за 3000 руб., дарим укладку в подарок!`
     }
